@@ -1,12 +1,12 @@
-import { DateFormatType, DateObj, isFormatDateType, Option } from "./types.ts";
+import { dateToDayOfYear, dateToTS, dateToWeekDay } from "./convert.ts";
 import { Locale } from "./locale.ts";
+import { DateFormatType, DateObj, isFormatDateType, Option } from "./types.ts";
 import {
   formatToThreeDigits,
   formatToTwoDigits,
   millisecToMin,
   weeksOfYear,
 } from "./utils.ts";
-import { dateToDayOfYear, dateToTS, dateToWeekDay } from "./convert.ts";
 
 export function formatDateObj(
   dateObj: DateObj,

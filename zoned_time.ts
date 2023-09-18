@@ -1,6 +1,6 @@
+import { dateToJSDate, dateToTS, jsDateToDate } from "./convert.ts";
 import { tzOffset } from "./timezone.ts";
 import { DateObj, Timezone } from "./types.ts";
-import { dateToJSDate, dateToTS, jsDateToDate } from "./convert.ts";
 
 export function utcToZonedTime(date: DateObj, tz: Timezone): DateObj {
   const offset = tzOffset(dateToJSDate(date), tz);

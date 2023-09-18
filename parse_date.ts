@@ -218,10 +218,10 @@ function hashToDate(
   }
 
   if (hash["month"]) {
-    month = parseInteger((hash["month"]));
+    month = parseInteger(hash["month"]);
   }
 
-  let day = parseInteger((hash["day"]));
+  let day = parseInteger(hash["day"]);
 
   if (hash["dayOfYear"]) {
     const dayOfYear = parseInteger(hash["dayOfYear"]);
@@ -232,10 +232,10 @@ function hashToDate(
     day = date?.day;
   }
 
-  const hour = parseInteger((hash["hour"]));
-  const minute = parseInteger((hash["minute"]));
-  const second = parseInteger((hash["second"]));
-  const millisecond = parseInteger((hash["millisecond"]));
+  const hour = parseInteger(hash["hour"]);
+  const minute = parseInteger(hash["minute"]);
+  const second = parseInteger(hash["second"]);
+  const millisecond = parseInteger(hash["millisecond"]);
 
   if (
     !isValidDate({ year, month, day, hour, minute, second, millisecond })

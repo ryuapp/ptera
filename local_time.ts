@@ -1,6 +1,6 @@
 import { MILLISECONDS_IN_MINUTE } from "./constants.ts";
-import { DateObj } from "./types.ts";
 import { dateToJSDate, jsDateToDate } from "./convert.ts";
+import { DateObj } from "./types.ts";
 
 export function getLocalName(): string {
   return new Intl.DateTimeFormat().resolvedOptions().timeZone;

@@ -1,4 +1,9 @@
 export {
+  MILLISECONDS_IN_DAY,
+  MILLISECONDS_IN_HOUR,
+  MILLISECONDS_IN_MINUTE,
+} from "./constants.ts";
+export {
   DateTime,
   datetime,
   diffInDays,
@@ -10,8 +15,3 @@ export {
   oldestDateTime,
 } from "./datetime.ts";
 export type { TIMEZONE, Timezone } from "./types.ts";
-export {
-  MILLISECONDS_IN_DAY,
-  MILLISECONDS_IN_HOUR,
-  MILLISECONDS_IN_MINUTE,
-} from "./constants.ts";

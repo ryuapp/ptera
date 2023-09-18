@@ -1,6 +1,6 @@
+import { dateToTS } from "./convert.ts";
 import { DateDiff, DateObj } from "./types.ts";
 import { daysInMonth, truncNumber } from "./utils.ts";
-import { dateToTS } from "./convert.ts";
 
 export function adjustedTS(
   baseDateObj: DateObj,
