@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.95.0/testing/asserts.ts";
+import { assertEquals } from "./deps.ts";
 import { formatDate, formatDateObj } from "./format.ts";
 import { Locale } from "./locale.ts";
 import { DateObj, Option, Timezone } from "./types.ts";

@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.95.0/testing/asserts.ts";
+import { assertEquals } from "./deps.ts";
 import { parseDateStr, parseISO } from "./parse_date.ts";
 import { INVALID_DATE } from "./utils.ts";
 
