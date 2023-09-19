@@ -1,5 +1,5 @@
-import { assertEquals } from "./deps.ts";
-import { Locale } from "./locale.ts";
+import { assertEquals } from "../deps.ts";
+import { Locale } from "../locale.ts";
 
 Deno.test("meridiems", () => {
   const tests = [

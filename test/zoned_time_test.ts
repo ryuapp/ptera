@@ -1,12 +1,12 @@
-import { MILLISECONDS_IN_HOUR } from "./constants.ts";
-import { assertEquals } from "./deps.ts";
-import { DateObj, Timezone } from "./types.ts";
+import { MILLISECONDS_IN_HOUR } from "../constants.ts";
+import { assertEquals } from "../deps.ts";
+import { DateObj, Timezone } from "../types.ts";
 import {
   diffOffset,
   toOtherZonedTime,
   utcToZonedTime,
   zonedTimeToUTC,
-} from "./zoned_time.ts";
+} from "../zoned_time.ts";
 
 Deno.test("utcToZonedTime", () => {
   type Test = {

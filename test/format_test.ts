@@ -1,7 +1,7 @@
-import { assertEquals } from "./deps.ts";
-import { formatDate, formatDateObj } from "./format.ts";
-import { Locale } from "./locale.ts";
-import { DateObj, Option, Timezone } from "./types.ts";
+import { assertEquals } from "../deps.ts";
+import { formatDate, formatDateObj } from "../format.ts";
+import { Locale } from "../locale.ts";
+import { DateObj, Option, Timezone } from "../types.ts";
 
 const defaultLocale = new Locale("en");
 Deno.test("format: YY", () => {

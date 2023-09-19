@@ -1,5 +1,5 @@
-import { arrayToDate } from "./convert.ts";
-import { assertEquals } from "./deps.ts";
+import { arrayToDate } from "../convert.ts";
+import { assertEquals } from "../deps.ts";
 
 Deno.test("arrayToDate", () => {
   const tests = [
