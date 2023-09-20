@@ -890,6 +890,62 @@ Deno.test("format: a", () => {
   });
 });
 
+Deno.test("format: S", () => {
+  const tests = [
+    {
+      input: {
+        year: 2021,
+        month: 1,
+        day: 2,
+        hour: 0,
+        minute: 0,
+        second: 0,
+        millisecond: 0,
+      },
+      expected: "000",
+    },
+    {
+      input: {
+        year: 2021,
+        month: 1,
+        day: 3,
+        hour: 0,
+        minute: 0,
+        second: 0,
+        millisecond: 9,
+      },
+      expected: "009",
+    },
+    {
+      input: {
+        year: 2021,
+        month: 5,
+        day: 3,
+        hour: 0,
+        minute: 0,
+        second: 0,
+        millisecond: 99,
+      },
+      expected: "099",
+    },
+    {
+      input: {
+        year: 2021,
+        month: 5,
+        day: 7,
+        hour: 0,
+        minute: 0,
+        second: 0,
+        millisecond: 999,
+      },
+      expected: "999",
+    },
+  ];
+  tests.forEach((t) => {
+    assertEquals(formatDateObj(t.input, "S", defaultLocale), t.expected);
+  });
+});
+
 Deno.test("format: w", () => {
   const tests = [
     {

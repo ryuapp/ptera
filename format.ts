@@ -73,9 +73,7 @@ export function formatDateObj(
       return second ? formatToTwoDigits(second).toString() : "00";
     }
     case "S": {
-      return millisecond
-        ? millisecond <= 99 ? "0${millisecond}" : millisecond.toString()
-        : "000";
+      return millisecond ? formatToThreeDigits(millisecond).toString() : "000";
     }
     case "w": {
       return dateToWeekDay(dateObj).toString();
